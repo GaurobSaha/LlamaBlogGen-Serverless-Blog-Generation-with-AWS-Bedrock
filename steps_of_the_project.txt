@@ -1,0 +1,27 @@
+Steps:
+
+(i) Go to Amazon Bedrock and get the model access.
+
+(ii) Go to AWS Lambda & create the Lambda function.
+
+(iii) Now modify the Lambda function according to your need. In repo, app.py file contains core code of Lambda function.
+
+(iv) A part of the code shows how to invoke the foundation model. Under the model catalog section, there are different models. Each model has code documentation to invoke model.
+
+(v) Deploy your modified Lambda function.
+
+(vi) Lambda function requires new version of boto3, but default version of Lambda function on AWS is older one. So, one layer is needed to be added on top of Lambda function.
+
+(vii) The layer is nothing but a latest version of boto3. If you want to install any package in Lambda, do the same way.
+
+(viii) Use API Gateway to trigger the Lambda function.
+
+(ix) Use API Gateway to create an API to trigger the Lambda function.
+
+(x) Create stage (environment).
+(x) Create the S3 bucket.
+
+(xi) Give the Administrator Access to the Lambda function.
+
+(xii) Check the CloudWatch to see the blog generation confirmation.
+
